@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>ARTE </title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h4><b>Introduce los términos de busqueda</b></h4>
+        <!-- Formulario-->
+        <form onsubmit="return false;" method="GET" >
+            <table>
+                <tr>
+                 <td>
+                   <p>OBRA</p> 
+                   <p>Título <input type="text" placeholder="" id="txt_titulo"/></p>
+                   <p> Autor  <input type="text" placeholder="" id="txt_Autor"/></p>
+                 </td> 
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td>
+                    <p>TIPO</p>
+                    <input type="checkbox" id="tipo_esc"/> Escultura <br>
+                    <input type="checkbox" id="tipo_arq"/> Arquitectura<br>
+                    <input type="checkbox" id="tipo_pint"/> Pintura<br>
+                 </td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td>
+                     <p>DISPONIBILIDAD</p>
+                     <input type="radio" id="disp_publ" name="disp_publ"/> Museo / Acceso público <br>
+                     <input type="radio" id="disp_priv" name="disp_priv"/> Colección Privada <br>
+                 </td>
+                  <td></td>
+                 <td></td>
+                 <td></td>
+                 <td></td>
+                 <td>
+                     <p>ESTILO</p>
+                     <select id="txt_estilo">
+                        <option value="clas"> Clásico </option>
+                        <option value="abs"> Abstracto </option>
+                        <option value="surr"> Surrealista </option>
+                        <option value="otro"> Otros </option>
+                     </select> 
+                 </td>
+                 </tr>
+                </table>
+            <table>
+                 <tr>
+                     <td><p><b>Háganos saber sus sugerencias:</b></p></td>
+                     <td><textarea name="sugerencias" rows="4" cols="40" id="txt_comentario" placeholder="Me gustara indicar que..."></textarea></td>
+                 </tr>
+                 <tr>
+                     <td></td>
+                     <td>
+                         <div align="center">  <input type="submit" value="Buscar"/></div></td>
+                 </tr>
+            </table>
+        </form>
+    </body>
+</html>
